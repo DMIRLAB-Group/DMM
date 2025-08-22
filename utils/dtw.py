@@ -106,9 +106,7 @@ def shape_dtw(prototype, sample, return_flag = RETURN_VALUE, slope_constraint="a
     :param sample: np array [0..t]
     :param extended: bool
     """
-    # shapeDTW
-    # https://www.sciencedirect.com/science/article/pii/S0031320317303710
-    
+
     p = prototype.shape[0]
     assert p != 0, "Prototype empty!"
     s = sample.shape[0]
